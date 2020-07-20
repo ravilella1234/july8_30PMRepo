@@ -1,7 +1,6 @@
 package com.launchings;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -12,13 +11,28 @@ public class BaseTest
 {
 	public static WebDriver driver;
 	public static String projectPath = System.getProperty("user.dir");
+	public static FileInputStream fis;
 	public static Properties p;
+	public static Properties mainProperty;
+	public static Properties childProperty;
 	
 	public static void init() throws Exception
 	{
-		FileInputStream fis = new FileInputStream(projectPath + "//data.properties");
+		fis = new FileInputStream(projectPath + "//data.properties");
 		p = new Properties();
 		p.load(fis);
+		
+		fis = new FileInputStream(projectPath + "//environment.properties");
+		mainProperty = new Properties();
+		mainProperty.load(fis);
+		String e = mainProperty.getProperty("env");
+		System.out.println(e);
+		
+		
+		fis = new FileInputStream(projectPath + "//"+e+".properties");
+		childProperty = new Properties();
+		childProperty.load(fis);
+		System.out.println(childProperty.getProperty("amazonurl"));
 	}
 	
 	
@@ -39,7 +53,8 @@ public class BaseTest
 	
 	public  static void navigateUrl(String url)
 	{
-		driver.get(p.getProperty(url));
+		//driver.get(childProperty.getProperty(url));
+		driver.navigate().to(childProperty.getProperty(url));
 	}
 
 }
