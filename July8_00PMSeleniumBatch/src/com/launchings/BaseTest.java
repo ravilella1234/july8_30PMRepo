@@ -3,6 +3,7 @@ package com.launchings;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,9 +42,14 @@ public class BaseTest
 		childProperty.load(fis);
 		System.out.println(childProperty.getProperty("amazonurl"));
 		
+		
 		fis = new FileInputStream(projectPath + "//or.properties");
 		or = new Properties();
 		or.load(fis);
+		
+		fis = new FileInputStream(projectPath + "//log4jconfig.properties");
+		PropertyConfigurator.configure(fis);
+		
 	}
 	
 	
