@@ -1,6 +1,7 @@
 package com.launchings;
 
 import java.io.FileInputStream;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
@@ -14,6 +15,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class BaseTest 
 {
 	public static WebDriver driver;
@@ -23,6 +27,17 @@ public class BaseTest
 	public static Properties mainProperty;
 	public static Properties childProperty;
 	public static Properties or;
+	public static ExtentReports report;
+	public static ExtentTest test;
+	public static String filePath;
+	
+	
+	static
+	{
+		Date dt = new Date();
+		filePath = dt.toString().replace(':', '_').replace(' ', '_');
+		
+	}
 	
 	public static void init() throws Exception
 	{
@@ -49,6 +64,8 @@ public class BaseTest
 		
 		fis = new FileInputStream(projectPath + "//log4jconfig.properties");
 		PropertyConfigurator.configure(fis);
+		
+		report = ExtentManager.getInstance();
 		
 	}
 	
