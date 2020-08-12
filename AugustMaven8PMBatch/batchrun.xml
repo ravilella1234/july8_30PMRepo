@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite">
+
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.project.AugustMaven8PMBatch.CheckBox1"/>
+      <class name="com.project.AugustMaven8PMBatch.LinksTesting1"/>
+      <class name="com.project.AugustMaven8PMBatch.RadioButton1"/>
+      <class name="com.project.AugustMaven8PMBatch.TNG_002"/>
+      <class name="com.project.AugustMaven8PMBatch.JavaClass"/>
+    </classes>
+  </test> <!-- AutomationTest -->
+  
+  
+  <test thread-count="5" name="firfoxTest">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.project.AugustMaven8PMBatch.CheckBox1"/>
+      <class name="com.project.AugustMaven8PMBatch.LinksTesting1"/>
+      <class name="com.project.AugustMaven8PMBatch.RadioButton1"/>
+      <class name="com.project.AugustMaven8PMBatch.TNG_002"/>
+      <class name="com.project.AugustMaven8PMBatch.JavaClass"/>
+    </classes>
+  </test> <!-- AutomationTest -->
+  
+</suite> <!-- AutomationSuite -->
