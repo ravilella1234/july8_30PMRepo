@@ -1,120 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
   </reporter-output>
-  <suite name="AutomationSuite" duration-ms="79504" started-at="2020-08-12T21:06:38 IST" finished-at="2020-08-12T21:07:57 IST">
+  <suite name="Suite" duration-ms="132" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
     <groups>
     </groups>
-    <test name="AutomationTest" duration-ms="79504" started-at="2020-08-12T21:06:38 IST" finished-at="2020-08-12T21:07:57 IST">
-      <class name="com.project.AugustMaven8PMBatch.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.AugustMaven8PMBatch.RadioButton1@26aa12dd]" name="beforeMethod" is-config="true" duration-ms="13125" started-at="2020-08-12T21:07:11 IST" finished-at="2020-08-12T21:07:24 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Test" duration-ms="132" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
+      <class name="parallel.ClassTwo">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:parallel.ClassTwo@6737fd8f]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioButtonTest()[pri:0, instance:com.project.AugustMaven8PMBatch.RadioButton1@26aa12dd]" name="radioButtonTest" duration-ms="3223" started-at="2020-08-12T21:07:24 IST" finished-at="2020-08-12T21:07:28 IST">
+        <test-method status="PASS" signature="f()[pri:0, instance:parallel.ClassTwo@6737fd8f]" name="f" duration-ms="16" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- radioButtonTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.AugustMaven8PMBatch.RadioButton1@26aa12dd]" name="afterMethod" is-config="true" duration-ms="873" started-at="2020-08-12T21:07:28 IST" finished-at="2020-08-12T21:07:29 IST">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:parallel.ClassTwo@6737fd8f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.AugustMaven8PMBatch.RadioButton1 -->
-      <class name="com.project.AugustMaven8PMBatch.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.AugustMaven8PMBatch.CheckBox1@1c3a4799]" name="beforeMethod" is-config="true" duration-ms="16357" started-at="2020-08-12T21:06:38 IST" finished-at="2020-08-12T21:06:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+      </class> <!-- parallel.ClassTwo -->
+      <class name="parallel.ClassOne">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:parallel.ClassOne@72b6cbcc]" name="beforeMethod" is-config="true" duration-ms="14" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.AugustMaven8PMBatch.CheckBox1@1c3a4799]" name="checkboxTest" duration-ms="5246" started-at="2020-08-12T21:06:54 IST" finished-at="2020-08-12T21:06:59 IST">
+        <test-method status="PASS" signature="f()[pri:0, instance:parallel.ClassOne@72b6cbcc]" name="f" duration-ms="19" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.AugustMaven8PMBatch.CheckBox1@1c3a4799]" name="afterMethod" is-config="true" duration-ms="2515" started-at="2020-08-12T21:06:59 IST" finished-at="2020-08-12T21:07:02 IST">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:parallel.ClassOne@72b6cbcc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-14T20:42:43 IST" finished-at="2020-08-14T20:42:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.AugustMaven8PMBatch.CheckBox1 -->
-      <class name="com.project.AugustMaven8PMBatch.LinksTesting1">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.project.AugustMaven8PMBatch.LinksTesting1@131276c2]" name="setup" is-config="true" duration-ms="6519" started-at="2020-08-12T21:07:02 IST" finished-at="2020-08-12T21:07:08 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.project.AugustMaven8PMBatch.LinksTesting1@131276c2]" name="linktesting1" duration-ms="1903" started-at="2020-08-12T21:07:08 IST" finished-at="2020-08-12T21:07:10 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.AugustMaven8PMBatch.LinksTesting1@131276c2]" name="tearDown" is-config="true" duration-ms="1069" started-at="2020-08-12T21:07:10 IST" finished-at="2020-08-12T21:07:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.project.AugustMaven8PMBatch.LinksTesting1 -->
-      <class name="com.project.AugustMaven8PMBatch.TNG_002">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.AugustMaven8PMBatch.TNG_002@3fd7a715]" name="startProcess" is-config="true" duration-ms="8559" started-at="2020-08-12T21:07:29 IST" finished-at="2020-08-12T21:07:37 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.AugustMaven8PMBatch.TNG_002@3fd7a715]" name="amazon" duration-ms="9802" started-at="2020-08-12T21:07:37 IST" finished-at="2020-08-12T21:07:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.AugustMaven8PMBatch.TNG_002@3fd7a715]" name="endProcess" is-config="true" duration-ms="1044" started-at="2020-08-12T21:07:47 IST" finished-at="2020-08-12T21:07:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.AugustMaven8PMBatch.TNG_002@3fd7a715]" name="startProcess" is-config="true" duration-ms="8074" started-at="2020-08-12T21:07:48 IST" finished-at="2020-08-12T21:07:56 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon1()[pri:0, instance:com.project.AugustMaven8PMBatch.TNG_002@3fd7a715]" name="amazon1" duration-ms="2" started-at="2020-08-12T21:07:56 IST" finished-at="2020-08-12T21:07:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon1 -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.AugustMaven8PMBatch.TNG_002@3fd7a715]" name="endProcess" is-config="true" duration-ms="1069" started-at="2020-08-12T21:07:56 IST" finished-at="2020-08-12T21:07:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.project.AugustMaven8PMBatch.TNG_002 -->
-    </test> <!-- AutomationTest -->
-  </suite> <!-- AutomationSuite -->
+      </class> <!-- parallel.ClassOne -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
