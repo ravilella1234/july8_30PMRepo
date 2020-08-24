@@ -12,7 +12,7 @@ public class TNG_002 extends BaseTest
 {
 	
   
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void startProcess(String bType) throws Exception 
   {
@@ -27,7 +27,7 @@ public class TNG_002 extends BaseTest
 		test.log(LogStatus.INFO, "Navigated to url :- " + childProperty.getProperty("amazonurl"));
   }
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
 	    selectOption("amazondropdown_name","Books");
@@ -40,14 +40,9 @@ public class TNG_002 extends BaseTest
 		test.log(LogStatus.PASS, "Clicked on Element By using locator :- " + or.getProperty("amazonsearchbutton_xpath"));
   }
   
-  @Test
-  public void amazon1()
-  {
-	  System.out.println("amazon1");
-  }
-  
+    
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void endProcess() 
   {
 	    report.endTest(test);
