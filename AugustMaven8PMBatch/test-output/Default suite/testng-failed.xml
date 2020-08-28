@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.AugustMaven8PMBatch.TestDependency">
+      <class name="excelDataDriven.DataManagementUsingDataprovider">
         <methods>
-          <include name="blue"/>
-          <include name="green"/>
-          <include name="white"/>
-          <include name="orange"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.project.AugustMaven8PMBatch.TestDependency -->
+      </class> <!-- excelDataDriven.DataManagementUsingDataprovider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
