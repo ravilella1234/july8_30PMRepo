@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18537" started-at="2020-09-14T20:46:59 IST" finished-at="2020-09-14T20:47:17 IST">
+  <suite name="Default suite" duration-ms="17067" started-at="2020-09-15T21:05:16 IST" finished-at="2020-09-15T21:05:33 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18537" started-at="2020-09-14T20:46:59 IST" finished-at="2020-09-14T20:47:17 IST">
-      <class name="switchings.AlertHandling">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:switchings.AlertHandling@23faf8f2]" name="beforeMethod" is-config="true" duration-ms="12711" started-at="2020-09-14T20:46:59 IST" finished-at="2020-09-14T20:47:12 IST">
+    <test name="Default test" duration-ms="17067" started-at="2020-09-15T21:05:16 IST" finished-at="2020-09-15T21:05:33 IST">
+      <class name="actions.MouseOperations">
+        <test-method status="PASS" signature="setup()[pri:0, instance:actions.MouseOperations@23faf8f2]" name="setup" is-config="true" duration-ms="9118" started-at="2020-09-15T21:05:16 IST" finished-at="2020-09-15T21:05:25 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:switchings.AlertHandling@23faf8f2]" name="f" duration-ms="5694" started-at="2020-09-14T20:47:12 IST" finished-at="2020-09-14T20:47:17 IST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actions.MouseOperations@23faf8f2]" name="autoSuggestion" duration-ms="7836" started-at="2020-09-15T21:05:25 IST" finished-at="2020-09-15T21:05:33 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:switchings.AlertHandling@23faf8f2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-14T20:47:17 IST" finished-at="2020-09-14T20:47:17 IST">
+        </test-method> <!-- autoSuggestion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.MouseOperations@23faf8f2]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-15T21:05:33 IST" finished-at="2020-09-15T21:05:33 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- switchings.AlertHandling -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- actions.MouseOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
